@@ -1,0 +1,60 @@
+<!--
+Author: Mattia Carganico
+Student ID: 301278358
+Date: 2023-09-24
+
+Filename: index.ejs
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <%- include('partials/nav') %>
+        <!-- page content -->
+        <section class="hero_section position-relative">
+            <div class="hero_section-container ">
+                <div class="hero_img-box">
+                    <img src="/img/mattia.jpg" alt="AI program">
+                </div>
+                <div class="hero_detail-box">
+                    <h1>
+                        My Name Is Mattia Carganico <br>
+                        & I’m a Student <br>
+                        In Software Engineering - Artificial Intelligence<br>
+                    </h1>
+                    <hr>
+                    <p>
+                        <br><br><br>
+                        I help companies make data-driven decisions and develop innovative software
+                        solutions
+                        by leveraging my expertise in data science, programming,
+                        and agile methodologies.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-sm-start">
+                        <a href="about" class="call_to-btn ">
+                            <span>
+                                Read More
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <%- include('partials/footer') %>
+                </div>
+</body>
+
+</html>

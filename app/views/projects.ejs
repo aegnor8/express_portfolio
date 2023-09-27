@@ -1,0 +1,99 @@
+<!--
+Author: Mattia Carganico
+Student ID: 301278358
+Date: 2023-09-24
+
+Filename: projects.ejs
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <%- include('partials/nav') %>
+
+
+        <!-- Contenuto specifico della pagina -->
+        <!-- practice section -->
+        <section class="practice_section layout_padding">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center">
+                    <p class="heading-text">
+                        ACADEMIC
+                    </p>
+                    <h3 class="text-uppercase">
+                        PROJECTS
+                    </h3>
+                </div>
+                <div class="practice_container">
+                    <div class="practice_box">
+                        <div class="practice_img-box">
+                            <img src="img/er.png" alt="ER diagram">
+                        </div>
+                        <h4>
+                            Airline SQL Database
+                        </h4>
+                    </div>
+                    <div class="practice_box">
+                        <div class="practice_img-box">
+                            <img src="img/cat.png" alt="cat website exaple">
+                        </div>
+                        <h4>
+                            Cat Api Gallery
+                        </h4>
+                    </div>
+                    <div class="practice_box">
+                        <div class="practice_img-box">
+                            <img src="img/library.png" alt="library program">
+                        </div>
+                        <h4>
+                            C# Library System
+                        </h4>
+                    </div>
+                    <div class="practice_box">
+                        <div class="practice_img-box">
+                            <img src="img/jsonviewer.png" alt="movie posters">
+                        </div>
+                        <h4>
+                            JavaScript Json Viewer
+                        </h4>
+                    </div>
+                </div>
+                <div class="practice_detail">
+                    <p>
+                        Coding my way through challenges, one project at a time,
+                        from Airline SQL Databases to Cat API Galleries and more.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="/about" class="sub_call_to-btn ">
+                            <span>
+                                Read More
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- end practice section -->
+
+
+        <%- include('partials/footer') %>
+</body>
+
+</html>
